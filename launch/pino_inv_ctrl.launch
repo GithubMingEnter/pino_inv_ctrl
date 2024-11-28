@@ -1,0 +1,13 @@
+<launch>
+
+
+    <node pkg="pino_inv_ctrl"
+          type="pino_inv_ctrl.py"
+          name="pino_inv_ctrl"
+          respawn="true"
+          output="screen"
+    >
+    <param name="urdf_path" type="str" value="$(find rm_description)/urdf/RM75/rm_75.urdf"/>
+    <param name="is_sim" type="bool" value="True" />
+    </node>
+</launch>
